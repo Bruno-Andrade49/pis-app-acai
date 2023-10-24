@@ -25,7 +25,7 @@ export const Slide = () => {
             >
                 {slides.map(slide => (
                     <SwiperSlide key={slide}>
-                        <img src={slide} alt={slide} style={{ height: "600px", width: "100%", objectFit: "cover" }} />
+                        <img src={slide} alt={slide} style={{ height: "500px", width: "100%", objectFit: "cover" }} />
                     </SwiperSlide>
                 ))}
             </Swiper>
