@@ -1,16 +1,17 @@
 import Galery from '@/components/galery/galery';
+import PMSections from '@/components/pm-sections/pmSections';
 import TitleSection from '@/components/titleSection/titleSection';
 import React from 'react'
 
 const GalerySection = () => {
     return (
         <>
-            <div className="max-w-7xl py-12 px-12 m-auto">
+            <PMSections>
 
                 <TitleSection title='Galeria' />
                 <Galery />
 
-            </div>
+            </PMSections>
         </>
 
     )
