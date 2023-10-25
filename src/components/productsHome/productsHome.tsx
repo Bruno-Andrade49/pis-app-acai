@@ -8,7 +8,7 @@ const ProductsHome = () => {
 
                 <div className="flex justify-between w-full ">
 
-                    <div className="text-5xl font-bold opacity-80 text-violet-950">
+                    <div className="text-3xl lg:text-5xl font-bold opacity-80 text-violet-950">
                         Produtos
                     </div>
 

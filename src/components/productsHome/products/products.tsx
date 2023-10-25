@@ -18,7 +18,7 @@ const Products = () => {
                             />
                         </div>
                         <div className="flex flex-col text-center justify-between p-4">
-                            <div className="text-xl font-bold text-violet-950">{produto.nome}</div>
+                            <div className="text-xl font-bold text-violet-950 hover:text-violet-600">{produto.nome}</div>
                             <div className="text-center">
                                 <div className="flex justify-center">
                                     <CgGlassAlt className="relative top-[0.30rem] text-violet-800 mr-2" />
