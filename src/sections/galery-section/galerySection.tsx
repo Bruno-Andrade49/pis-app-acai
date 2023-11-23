@@ -10,9 +10,9 @@ const GalerySection = () => {
             <PMSections>
 
                 <TitleSection title='Galeria' />
-                <Galery photos={photos} />
 
             </PMSections>
+            <Galery photos={photos} />
         </>
 
     )

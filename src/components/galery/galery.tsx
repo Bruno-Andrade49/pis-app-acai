@@ -61,22 +61,28 @@ const Gallery = ({ photos }: { photos: Array<{ src: string }> }) => {
                             onClick={nextSlide}
                         />
 
-                        <img src={photos[slideNumber].src} alt="" className="max-w-full max-h-full pointer-events-none select-none" />
+                        <img src={photos[slideNumber].src} alt="" className="lg:max-w-full lg:max-h-full lg:pointer-events-none lg:select-none" />
                     </div>
                 </div>
             )}
 
-            <div className="flex flex-wrap gap-3 justify-center max-w-[1500px] m-auto">
-                {
-                    photos && photos.map((slide, index) => {
+            <div className="flex flex-wrap justify-center">
+                {photos &&
+                    photos.map((slide, index) => {
                         return (
-                            <div className="w-52 cursor-pointer" key={index}
-                                onClick={() => handleOpenModal(index)}>
-                                <img src={slide.src} alt="" className="hover:scale-125 max-w-full transition-all object-fill" />
+                            <div
+                                className="w-1/3 sm:w-1/3 md:w-1/3 lg:w-1/4 xl:w-1/5 cursor-pointer"
+                                key={index}
+                                onClick={() => handleOpenModal(index)}
+                            >
+                                <img
+                                    src={slide.src}
+                                    alt=""
+                                    className="hover:scale-125 w-full h-auto transition-all object-cover"
+                                />
                             </div>
-                        )
-                    })
-                }
+                        );
+                    })}
             </div>
         </>
     )
