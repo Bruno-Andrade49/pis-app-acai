@@ -6,7 +6,6 @@ import { Slide } from "@/components/slide/slides"
 export const HeroSection = () => {
     return (
         <>
-            <Navbar />
             <Sidebar />
             <Slide />
             <ProductsHome />

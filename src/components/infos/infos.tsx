@@ -14,17 +14,17 @@ const Infos = () => {
   <div className='absolute inset-0 bg-violet-600 opacity-30 rounded-3xl'></div>
 
   <div className='text-center text-violet-50 relative z-10'>
-    <h1 className='font-bold text-2xl'>20 anos</h1>
+    <h1 className='font-bold lg:text-2xl text-lg'>20 anos</h1>
     <p>realizando sonhos</p>
   </div>
 
   <div className='text-center text-white relative z-10'>
-    <h1 className='font-bold text-2xl'>20 anos</h1>
+    <h1 className='font-bold lg:text-2xl text-lg'>20 anos</h1>
     <p>realizando sonhos</p>
   </div>
 
   <div className='text-center text-violet-50 relative z-10'>
-    <h1 className='font-bold text-2xl'>20 anos</h1>
+    <h1 className='font-bold lg:text-2xl text-lg'>20 anos</h1>
     <p>realizando sonhos</p>
   </div>
 </div>

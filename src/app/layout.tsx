@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { SidebarProvider } from '@/context/sidebarContext'
 import Head from 'next/head'
+import { Navbar } from '@/components/navbar/Navbar'
+import { Sidebar } from '@/components/sidebar/sidebar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,10 +24,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt">
-      <SidebarProvider>
-        <body className={inter.className}>{children}</body>
-      </SidebarProvider>
-    </html>
+    <SidebarProvider>
+      <html lang="pt">
+        <body className={inter.className}>
+        <Navbar />
+        <Sidebar/>
+          {children}
+        </body>
+      </html>
+    </SidebarProvider>
   )
 }

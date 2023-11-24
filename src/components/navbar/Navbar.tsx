@@ -6,23 +6,30 @@ import { SearchButton } from "../searchButton/searchButton"
 import { AiOutlineMenu } from "react-icons/ai"
 import { useContext } from "react";
 import SidebarContext from "@/context/sidebarContext";
+import Link from "next/link"
 
 // eslint-disable-next-line react/display-name
 export const Navbar = () => {
 
     const { toggleSidebar } = useContext(SidebarContext);
 
+    const handleClickHome = () => {
+
+    }
+
     return (
         <>
             <div className="w-full bg-slate-300 py-4 h-auto flex flex-col sm:flex-row">
                 <div className="flex m-auto w-5/6 justify-between items-center">
 
-                    <Image
-                        src={logo}
-                        width={150}
-                        height={60} // Ajuste a altura conforme necessário
-                        alt="Picture of the author"
-                    />
+                    <Link href="/">
+                        <Image
+                            src={logo}
+                            width={150}
+                            height={60} // Ajuste a altura conforme necessário
+                            alt="Picture of the author"
+                        />
+                    </Link>
 
                     <section className="hidden lg:block items-center font-custom font-medium text-sm">
                         <ul className="flex space-x-4 text-violet-800">

@@ -1,3 +1,4 @@
+import { Navbar } from '@/components/navbar/Navbar'
 import GalerySection from '@/sections/galery-section/galerySection'
 import { HeroSection } from '@/sections/hero-section/heroSection'
 import InfoSection from '@/sections/info-section/infoSection'
