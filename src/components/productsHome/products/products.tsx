@@ -4,19 +4,22 @@ import { CgGlassAlt } from "react-icons/cg"
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Products = () => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center my-8">
             {produtosDeAcai.map((produto) => (
-                <Link href={`/produtos/${produto.id}`}>
-                    <div key={produto.id} className="p-4 transform transition-transform duration-300 hover:scale-110">
+                <Link key={produto.id} href={`/produtos/${produto.id}`}>
+                    <div className="p-4 transform transition-transform duration-300 hover:scale-110">
                         <div className="bg-violet-100 rounded-[50px] flex flex-col h-full">
                             <div className="w-full h-[300px]">
-                                <img
+                                <Image
                                     src={produto.imagem[0]}
                                     alt="Imagem do produto"
                                     className="w-full h-full object-cover rounded-[50px]"
+                                    width={300}
+                                    height={300}
                                 />
                             </div>
                             <div className="flex flex-col text-center justify-between p-4">
